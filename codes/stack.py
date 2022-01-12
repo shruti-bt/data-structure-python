@@ -11,7 +11,6 @@ class Stack():
     def print(self):
         return print(*self.stack, sep=" --> ")
         
-
 if __name__ == "__main__":
     stack = Stack()
     stack.push(78)
