@@ -11,8 +11,8 @@ class Queue:
     def pop(self) -> None:
         self._queue.pop(0)
 
-    def print(self) -> None:
-        return print(self._queue, sep=" --> ")
+    def __str__(self):
+        return "{}".format(self._queue)
 
     def __len__(self):
         return len(self._queue)
@@ -27,3 +27,8 @@ if __name__ == "__main__":
     queue.insert(48)
     queue.print()
     print(len(queue))
+
+
+
+
+ 
